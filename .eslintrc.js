@@ -2,7 +2,8 @@ module.exports = {
   "env": {
     "browser": true,
     "es6": true,
-    "jest/globals": true
+    "jest/globals": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended",
@@ -32,8 +33,7 @@ module.exports = {
       "single"
     ],
     "semi": [
-      "error",
-      "never"
+      "off"
     ],
     "eqeqeq": "error",
     "no-trailing-spaces": "error",
@@ -43,12 +43,12 @@ module.exports = {
     "arrow-spacing": [
       "error", { "before": true, "after": true }
     ],
-    "no-console": "error",
+    "no-console": "off",
     "react/prop-types": 0
   },
   "overrides": [
     {
-      "files": ["app.js"],
+      "files": ["app.js", ".eslintrc.js"],
       "env": {
         "node": true
       }
